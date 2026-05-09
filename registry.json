@@ -790,6 +790,46 @@
       }
     },
     {
+      "name": "Neon Surf",
+      "path": "Neon Surf",
+      "dark": {
+        "mPrimary": "#00a8f4",
+        "mOnPrimary": "#000000",
+        "mSecondary": "#22d3ee",
+        "mOnSecondary": "#000000",
+        "mTertiary": "#0ea5e9",
+        "mOnTertiary": "#000000",
+        "mError": "#B74E90",
+        "mOnError": "#000000",
+        "mSurface": "#000000",
+        "mOnSurface": "#80C8F4",
+        "mSurfaceVariant": "#06101A",
+        "mOnSurfaceVariant": "#00a8f4",
+        "mOutline": "#0A2030",
+        "mShadow": "#000000",
+        "mHover": "#22d3ee",
+        "mOnHover": "#000000"
+      },
+      "light": {
+        "mPrimary": "#0284c7",
+        "mOnPrimary": "#FFFFFF",
+        "mSecondary": "#0891b2",
+        "mOnSecondary": "#FFFFFF",
+        "mTertiary": "#0ea5e9",
+        "mOnTertiary": "#FFFFFF",
+        "mError": "#8A3068",
+        "mOnError": "#FFFFFF",
+        "mSurface": "#F0FAFF",
+        "mOnSurface": "#06101A",
+        "mSurfaceVariant": "#D8EEF8",
+        "mOnSurfaceVariant": "#0284c7",
+        "mOutline": "#80C0D8",
+        "mShadow": "#C0DAE8",
+        "mHover": "#0284c7",
+        "mOnHover": "#FFFFFF"
+      }
+    },
+    {
       "name": "Murasaki",
       "path": "Murasaki",
       "dark": {
