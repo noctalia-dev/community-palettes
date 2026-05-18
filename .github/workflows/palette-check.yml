@@ -165,4 +165,5 @@ jobs:
 
           if [[ "$issues" -ne 0 ]]; then
             gh pr comment "$PR_NUMBER" --body "$comment_body"
+            exit 1
           fi
