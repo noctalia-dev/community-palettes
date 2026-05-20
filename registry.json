@@ -482,6 +482,46 @@
       }
     },
     {
+      "name": "Flexoki",
+      "path": "Flexoki",
+      "dark": {
+        "mPrimary": "#879a39",
+        "mOnPrimary": "#1a1e0c",
+        "mSecondary": "#4385be",
+        "mOnSecondary": "#101a24",
+        "mTertiary": "#8b7ec8",
+        "mOnTertiary": "#1a1623",
+        "mError": "#d14d41",
+        "mOnError": "#261312",
+        "mSurface": "#100f0f",
+        "mOnSurface": "#cecdc3",
+        "mSurfaceVariant": "#1c1b1a",
+        "mOnSurfaceVariant": "#878580",
+        "mOutline": "#282726",
+        "mShadow": "#100f0f",
+        "mHover": "#403e3c",
+        "mOnHover": "#cecdc3"
+      },
+      "light": {
+        "mPrimary": "#879a39",
+        "mOnPrimary": "#1a1e0c",
+        "mSecondary": "#4385be",
+        "mOnSecondary": "#101a24",
+        "mTertiary": "#8b7ec8",
+        "mOnTertiary": "#1a1623",
+        "mError": "#d14d41",
+        "mOnError": "#261312",
+        "mSurface": "#fffcf0",
+        "mOnSurface": "#100f0f",
+        "mSurfaceVariant": "#f2f0e5",
+        "mOnSurfaceVariant": "#6f6e69",
+        "mOutline": "#e6e4d9",
+        "mShadow": "#100f0f",
+        "mHover": "#cecdc3",
+        "mOnHover": "#100f0f"
+      }
+    },
+    {
       "name": "GitHub Dark",
       "path": "GitHub Dark",
       "dark": {
