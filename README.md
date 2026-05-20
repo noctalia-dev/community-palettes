@@ -6,5 +6,5 @@
 
 ---
 
-This is where we fetch all the additional palettes for noctalial from.
+This is where we fetch all the additional palettes for noctalia from.
 If you want your palette to be added to noctalia, you will have to create a PR over here.
