@@ -21,7 +21,7 @@
       "foreground": "#F0F0F0",
       "cursor": "#2E9EF4",
       "cursorText": "#222222",
-      "selectionBg: "#4C7899",
+      "selectionBg": "#4C7899",
       "selectionFg": "#FFFFFF",
       "normal": {
         "black":   "#222222",
