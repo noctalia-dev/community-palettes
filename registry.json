@@ -2122,46 +2122,6 @@
       }
     },
     {
-      "name": "Tokyo Night Storm",
-      "path": "Tokyo Night Storm",
-      "dark": {
-        "mPrimary": "#7aa2f7",
-        "mOnPrimary": "#1a1b26",
-        "mSecondary": "#bb9af7",
-        "mOnSecondary": "#1a1b26",
-        "mTertiary": "#73daca",
-        "mOnTertiary": "#1a1b26",
-        "mError": "#f7768e",
-        "mOnError": "#1a1b26",
-        "mSurface": "#24283b",
-        "mOnSurface": "#c0caf5",
-        "mSurfaceVariant": "#1f2335",
-        "mOnSurfaceVariant": "#787c99",
-        "mOutline": "#565f89",
-        "mShadow": "#1a1b26",
-        "mHover": "#73daca",
-        "mOnHover": "#1a1b26"
-      },
-      "light": {
-        "mPrimary": "#4e70c2",
-        "mOnPrimary": "#f0f2f7",
-        "mSecondary": "#85539c",
-        "mOnSecondary": "#f0f2f7",
-        "mTertiary": "#4c663b",
-        "mOnTertiary": "#f0f2f7",
-        "mError": "#e55561",
-        "mOnError": "#f0f2f7",
-        "mSurface": "#f0f2f7",
-        "mOnSurface": "#4e70c2",
-        "mSurfaceVariant": "#dbdfea",
-        "mOnSurfaceVariant": "#444b6a",
-        "mOutline": "#c8ccd8",
-        "mShadow": "#a4a8b7",
-        "mHover": "#4c663b",
-        "mOnHover": "#f0f2f7"
-      }
-    },
-    {
       "name": "Vesper",
       "path": "Vesper",
       "dark": {
