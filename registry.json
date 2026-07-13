@@ -1396,7 +1396,7 @@
         "mSurfaceVariant": "#f3f2f5",
         "mOnSurfaceVariant": "#3a3a3a",
         "mOutline": "#b8b6bb",
-        "mShadow": "#00000020",
+        "mShadow": "#000000",
         "mHover": "#e6e4e8",
         "mOnHover": "#1d1b1d"
       }
