@@ -242,6 +242,46 @@
       }
     },
     {
+      "name": "Catppuccin Frappe Lavender",
+      "path": "Catppuccin Frappe Lavender",
+      "dark": {
+        "mPrimary": "#babbf1",
+        "mOnPrimary": "#303446",
+        "mSecondary": "#8caaee",
+        "mOnSecondary": "#303446",
+        "mTertiary": "#ca9ee6",
+        "mOnTertiary": "#303446",
+        "mError": "#e78284",
+        "mOnError": "#303446",
+        "mSurface": "#303446",
+        "mOnSurface": "#c6d0f5",
+        "mSurfaceVariant": "#414559",
+        "mOnSurfaceVariant": "#a5adce",
+        "mOutline": "#737994",
+        "mShadow": "#232634",
+        "mHover": "#51576d",
+        "mOnHover": "#c6d0f5"
+      },
+      "light": {
+        "mPrimary": "#7287fd",
+        "mOnPrimary": "#eff1f5",
+        "mSecondary": "#1e66f5",
+        "mOnSecondary": "#eff1f5",
+        "mTertiary": "#8839ef",
+        "mOnTertiary": "#eff1f5",
+        "mError": "#d20f39",
+        "mOnError": "#eff1f5",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#ccd0da",
+        "mOnSurfaceVariant": "#6c6f85",
+        "mOutline": "#9ca0b0",
+        "mShadow": "#dce0e8",
+        "mHover": "#bcc0cc",
+        "mOnHover": "#4c4f69"
+      }
+    },
+    {
       "name": "Catppuccin Lavender",
       "path": "Catppuccin Lavender",
       "dark": {
