@@ -21,8 +21,8 @@
       "foreground": "#F0F0F0",
       "cursor": "#EDE78E",
       "cursorText": "#2D2B33",
-      "selectionBg": "#FFF4E3",
-      "selectionFg": "#666666",
+      "selectionBg": "#4E4C54",
+      "selectionFg": "#E8E080",
       "normal": {
         "black": "#2D2B33",
         "red": "#f92672",
@@ -68,7 +68,7 @@
       "cursor": "#DB8484",
       "cursorText": "#FFF4E3",
       "selectionBg": "#EDE3D3",
-      "selectionFg": "#666666",
+      "selectionFg": "#CC5E5E",
       "normal": {
         "black": "#f8f8f2",
         "red": "#f92672",
