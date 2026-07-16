@@ -2800,6 +2800,46 @@
         "mHover": "#E0E0E0",
         "mOnHover": "#0C0C0C"
       }
+    },
+    {
+      "name": "Zenbones",
+      "path": "Zenbones",
+      "dark": {
+        "mPrimary": "#b4bdc3",
+        "mOnPrimary": "#1c1917",
+        "mSecondary": "#888f94",
+        "mOnSecondary": "#1c1917",
+        "mTertiary": "#9f948f",
+        "mOnTertiary": "#1c1917",
+        "mError": "#de6e7c",
+        "mOnError": "#1c1917",
+        "mSurface": "#1c1917",
+        "mOnSurface": "#b4bdc3",
+        "mSurfaceVariant": "#403833",
+        "mOnSurfaceVariant": "#888f94",
+        "mOutline": "#888f94",
+        "mShadow": "#1c1917",
+        "mHover": "#9f948f",
+        "mOnHover": "#1c1917"
+      },
+      "light": {
+        "mPrimary": "#2C363C",
+        "mOnPrimary": "#F0EDEC",
+        "mSecondary": "#CFC1BA",
+        "mOnSecondary": "#F0EDEC",
+        "mTertiary": "#9F948F",
+        "mOnTertiary": "#F0EDEC",
+        "mError": "#A8334C",
+        "mOnError": "#F0EDEC",
+        "mSurface": "#F0EDEC",
+        "mOnSurface": "#2C363C",
+        "mSurfaceVariant": "#CFC1BA",
+        "mOnSurfaceVariant": "#CFC1BA",
+        "mOutline": "#CFC1BA",
+        "mShadow": "#F0EDEC",
+        "mHover": "#9F948F",
+        "mOnHover": "#F0EDEC"
+      }
     }
   ]
 }
