@@ -2882,6 +2882,46 @@
       }
     },
     {
+      "name": "Solarized Osaka",
+      "path": "Solarized Osaka",
+      "dark": {
+        "mPrimary": "#29a298",
+        "mOnPrimary": "#ffffff",
+        "mSecondary": "#db302d",
+        "mOnSecondary": "#ffffff",
+        "mTertiary": "#b28500",
+        "mOnTertiary": "#001419",
+        "mError": "#db302d",
+        "mOnError": "#ffffff",
+        "mSurface": "#001419",
+        "mOnSurface": "#839395",
+        "mSurfaceVariant": "#002c38",
+        "mOnSurfaceVariant": "#637981",
+        "mOutline": "#576d74",
+        "mShadow": "#001014",
+        "mHover": "#576d74",
+        "mOnHover": "#fdf5e2"
+      },
+      "light": {
+        "mPrimary": "#29a298",
+        "mOnPrimary": "#001419",
+        "mSecondary": "#db302d",
+        "mOnSecondary": "#fdf5e2",
+        "mTertiary": "#b28500",
+        "mOnTertiary": "#001419",
+        "mError": "#db302d",
+        "mOnError": "#fdf5e2",
+        "mSurface": "#fdf5e2",
+        "mOnSurface": "#576d74",
+        "mSurfaceVariant": "#ede7d3",
+        "mOnSurfaceVariant": "#576d74",
+        "mOutline": "#adb7b7",
+        "mShadow": "#cac4b5",
+        "mHover": "#cac4b5",
+        "mOnHover": "#001419"
+      }
+    },
+    {
       "name": "Sway Classic",
       "path": "Sway Classic",
       "dark": {
