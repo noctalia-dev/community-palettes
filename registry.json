@@ -322,6 +322,46 @@
       }
     },
     {
+      "name": "Catppuccin Frappe Mauve",
+      "path": "Catppuccin Frappe Mauve",
+      "dark": {
+        "mPrimary": "#ca9ee6",
+        "mOnPrimary": "#303446",
+        "mSecondary": "#babbf1",
+        "mOnSecondary": "#303446",
+        "mTertiary": "#99d1db",
+        "mOnTertiary": "#303446",
+        "mError": "#e78284",
+        "mOnError": "#303446",
+        "mSurface": "#303446",
+        "mOnSurface": "#c6d0f5",
+        "mSurfaceVariant": "#414559",
+        "mOnSurfaceVariant": "#a5adce",
+        "mOutline": "#737994",
+        "mShadow": "#232634",
+        "mHover": "#51576d",
+        "mOnHover": "#c6d0f5"
+      },
+      "light": {
+        "mPrimary": "#8839ef",
+        "mOnPrimary": "#eff1f5",
+        "mSecondary": "#7287fd",
+        "mOnSecondary": "#eff1f5",
+        "mTertiary": "#04a5e5",
+        "mOnTertiary": "#eff1f5",
+        "mError": "#d20f39",
+        "mOnError": "#dce0e8",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#ccd0da",
+        "mOnSurfaceVariant": "#6c6f85",
+        "mOutline": "#9ca0b0",
+        "mShadow": "#dce0e8",
+        "mHover": "#04a5e5",
+        "mOnHover": "#eff1f5"
+      }
+    },
+    {
       "name": "Catppuccin Frappe Pink",
       "path": "Catppuccin Frappe Pink",
       "dark": {
@@ -399,6 +439,46 @@
         "mShadow": "#dce0e8",
         "mHover": "#df8e1d",
         "mOnHover": "#eff1f5"
+      }
+    },
+    {
+      "name": "Catppuccin Frappe Sapphire.json",
+      "path": "Catppuccin Frappe Sapphire.json",
+      "dark": {
+        "mPrimary": "#85c1dc",
+        "mOnPrimary": "#303446",
+        "mSecondary": "#8caaee",
+        "mOnSecondary": "#303446",
+        "mTertiary": "#99d1db",
+        "mOnTertiary": "#303446",
+        "mError": "#e78284",
+        "mOnError": "#303446",
+        "mSurface": "#303446",
+        "mOnSurface": "#c6d0f5",
+        "mSurfaceVariant": "#414559",
+        "mOnSurfaceVariant": "#a5adce",
+        "mOutline": "#737994",
+        "mShadow": "#232634",
+        "mHover": "#51576d",
+        "mOnHover": "#c6d0f5"
+      },
+      "light": {
+        "mPrimary": "#209fb5",
+        "mOnPrimary": "#eff1f5",
+        "mSecondary": "#1e66f5",
+        "mOnSecondary": "#eff1f5",
+        "mTertiary": "#04a5e5",
+        "mOnTertiary": "#eff1f5",
+        "mError": "#d20f39",
+        "mOnError": "#eff1f5",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#ccd0da",
+        "mOnSurfaceVariant": "#6c6f85",
+        "mOutline": "#9ca0b0",
+        "mShadow": "#dce0e8",
+        "mHover": "#bcc0cc",
+        "mOnHover": "#4c4f69"
       }
     },
     {
@@ -482,14 +562,14 @@
       }
     },
     {
-      "name": "Catppuccin Macchiato Lavender ",
-      "path": "Catppuccin Macchiato Lavender ",
+      "name": "Catppuccin Macchiato Mauve",
+      "path": "Catppuccin Macchiato Mauve",
       "dark": {
-        "mPrimary": "#b7bdf8",
+        "mPrimary": "#c6a0f6",
         "mOnPrimary": "#181926",
-        "mSecondary": "#8aadf4",
+        "mSecondary": "#f5a97f",
         "mOnSecondary": "#181926",
-        "mTertiary": "#c6a0f6",
+        "mTertiary": "#8bd5ca",
         "mOnTertiary": "#181926",
         "mError": "#ed8796",
         "mOnError": "#181926",
@@ -499,15 +579,15 @@
         "mOnSurfaceVariant": "#a5adcb",
         "mOutline": "#494d64",
         "mShadow": "#181926",
-        "mHover": "#c6a0f6",
+        "mHover": "#8bd5ca",
         "mOnHover": "#181926"
       },
       "light": {
-        "mPrimary": "#1e66f5",
+        "mPrimary": "#8839ef",
         "mOnPrimary": "#eff1f5",
-        "mSecondary": "#1e66f5",
+        "mSecondary": "#fe640b",
         "mOnSecondary": "#eff1f5",
-        "mTertiary": "#8839ef",
+        "mTertiary": "#179299",
         "mOnTertiary": "#eff1f5",
         "mError": "#d20f39",
         "mOnError": "#dce0e8",
@@ -602,6 +682,46 @@
       }
     },
     {
+      "name": "Catppuccin Macchiato Sapphire",
+      "path": "Catppuccin Macchiato Sapphire",
+      "dark": {
+        "mPrimary": "#7dc4e4",
+        "mOnPrimary": "#181926",
+        "mSecondary": "#8aadf4",
+        "mOnSecondary": "#181926",
+        "mTertiary": "#91d7e3",
+        "mOnTertiary": "#181926",
+        "mError": "#ed8796",
+        "mOnError": "#181926",
+        "mSurface": "#24273a",
+        "mOnSurface": "#cad3f5",
+        "mSurfaceVariant": "#363a4f",
+        "mOnSurfaceVariant": "#a5adcb",
+        "mOutline": "#494d64",
+        "mShadow": "#181926",
+        "mHover": "#91d7e3",
+        "mOnHover": "#181926"
+      },
+      "light": {
+        "mPrimary": "#209fb5",
+        "mOnPrimary": "#eff1f5",
+        "mSecondary": "#1e66f5",
+        "mOnSecondary": "#eff1f5",
+        "mTertiary": "#04a5e5",
+        "mOnTertiary": "#eff1f5",
+        "mError": "#d20f39",
+        "mOnError": "#dce0e8",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#ccd0da",
+        "mOnSurfaceVariant": "#6c6f85",
+        "mOutline": "#a5adcb",
+        "mShadow": "#dce0e8",
+        "mHover": "#d20f39",
+        "mOnHover": "#eff1f5"
+      }
+    },
+    {
       "name": "Catppuccin Mocha Pink",
       "path": "Catppuccin Mocha Pink",
       "dark": {
@@ -689,7 +809,7 @@
         "mOnPrimary": "#11111b",
         "mSecondary": "#89b4fa",
         "mOnSecondary": "#11111b",
-        "mTertiary": "#b4befe",
+        "mTertiary": "#89dceb",
         "mOnTertiary": "#11111b",
         "mError": "#f38ba8",
         "mOnError": "#11111b",
@@ -699,7 +819,7 @@
         "mOnSurfaceVariant": "#a3b4eb",
         "mOutline": "#4c4f69",
         "mShadow": "#11111b",
-        "mHover": "#b4befe",
+        "mHover": "#89dceb",
         "mOnHover": "#11111b"
       },
       "light": {
@@ -707,7 +827,7 @@
         "mOnPrimary": "#eff1f5",
         "mSecondary": "#1e66f5",
         "mOnSecondary": "#eff1f5",
-        "mTertiary": "#7287fd",
+        "mTertiary": "#04a5e5",
         "mOnTertiary": "#eff1f5",
         "mError": "#d20f39",
         "mOnError": "#dce0e8",
@@ -2122,6 +2242,46 @@
       }
     },
     {
+      "name": "Nord Aurora",
+      "path": "Nord Aurora",
+      "dark": {
+        "mPrimary": "#b48ead",
+        "mOnPrimary": "#2e3440",
+        "mSecondary": "#a3be8c",
+        "mOnSecondary": "#2e3440",
+        "mTertiary": "#ebcb8b",
+        "mOnTertiary": "#2e3440",
+        "mError": "#bf616a",
+        "mOnError": "#2e3440",
+        "mSurface": "#2e3440",
+        "mOnSurface": "#eceff4",
+        "mSurfaceVariant": "#3b4252",
+        "mOnSurfaceVariant": "#e5e9f0",
+        "mOutline": "#434c5e",
+        "mShadow": "#2e3440",
+        "mHover": "#4c566a",
+        "mOnHover": "#d8dee9"
+      },
+      "light": {
+        "mPrimary": "#d08770",
+        "mOnPrimary": "#eceff4",
+        "mSecondary": "#b48ead",
+        "mOnSecondary": "#eceff4",
+        "mTertiary": "#a3be8c",
+        "mOnTertiary": "#eceff4",
+        "mError": "#bf616a",
+        "mOnError": "#eceff4",
+        "mSurface": "#eceff4",
+        "mOnSurface": "#2e3440",
+        "mSurfaceVariant": "#e5e9f0",
+        "mOnSurfaceVariant": "#3b4252",
+        "mOutline": "#d8dee9",
+        "mShadow": "#d8dee9",
+        "mHover": "#d8dee9",
+        "mOnHover": "#434c5e"
+      }
+    },
+    {
       "name": "Oasis Abyss",
       "path": "Oasis Abyss",
       "dark": {
@@ -2442,6 +2602,46 @@
       }
     },
     {
+      "name": "Rose Pine Alt",
+      "path": "Rose Pine Alt",
+      "dark": {
+        "mPrimary": "#c4a7e7",
+        "mOnPrimary": "#191724",
+        "mSecondary": "#f6c177",
+        "mOnSecondary": "#191724",
+        "mTertiary": "#9ccfd8",
+        "mOnTertiary": "#191724",
+        "mError": "#eb6f92",
+        "mOnError": "#191724",
+        "mSurface": "#191724",
+        "mOnSurface": "#e0def4",
+        "mSurfaceVariant": "#26233a",
+        "mOnSurfaceVariant": "#908caa",
+        "mOutline": "#403d52",
+        "mShadow": "#191724",
+        "mHover": "#524f67",
+        "mOnHover": "#191724"
+      },
+      "light": {
+        "mPrimary": "#907aa9",
+        "mOnPrimary": "#faf4ed",
+        "mSecondary": "#ea9d34",
+        "mOnSecondary": "#faf4ed",
+        "mTertiary": "#56949f",
+        "mOnTertiary": "#faf4ed",
+        "mError": "#b4637a",
+        "mOnError": "#faf4ed",
+        "mSurface": "#fffaf3",
+        "mOnSurface": "#575279",
+        "mSurfaceVariant": "#f2e9e1",
+        "mOnSurfaceVariant": "#797593",
+        "mOutline": "#dfdad9",
+        "mShadow": "#faf4ed",
+        "mHover": "#cecacd",
+        "mOnHover": "#575279"
+      }
+    },
+    {
       "name": "Rose Pine Moon",
       "path": "Rose Pine Moon",
       "dark": {
@@ -2468,6 +2668,46 @@
         "mSecondary": "#56949f",
         "mOnSecondary": "#faf4ed",
         "mTertiary": "#286983",
+        "mOnTertiary": "#faf4ed",
+        "mError": "#b4637a",
+        "mOnError": "#faf4ed",
+        "mSurface": "#fffaf3",
+        "mOnSurface": "#575279",
+        "mSurfaceVariant": "#f2e9e1",
+        "mOnSurfaceVariant": "#797593",
+        "mOutline": "#dfdad9",
+        "mShadow": "#faf4ed",
+        "mHover": "#cecacd",
+        "mOnHover": "#575279"
+      }
+    },
+    {
+      "name": "Rose Pine Moon Alt",
+      "path": "Rose Pine Moon Alt",
+      "dark": {
+        "mPrimary": "#c4a7e7",
+        "mOnPrimary": "#232136",
+        "mSecondary": "#f6c177",
+        "mOnSecondary": "#232136",
+        "mTertiary": "#9ccfd8",
+        "mOnTertiary": "#232136",
+        "mError": "#eb6f92",
+        "mOnError": "#232136",
+        "mSurface": "#232136",
+        "mOnSurface": "#e0def4",
+        "mSurfaceVariant": "#393552",
+        "mOnSurfaceVariant": "#908caa",
+        "mOutline": "#44415a",
+        "mShadow": "#232136",
+        "mHover": "#56526e",
+        "mOnHover": "#e0def4"
+      },
+      "light": {
+        "mPrimary": "#907aa9",
+        "mOnPrimary": "#faf4ed",
+        "mSecondary": "#ea9d34",
+        "mOnSecondary": "#faf4ed",
+        "mTertiary": "#56949f",
         "mOnTertiary": "#faf4ed",
         "mError": "#b4637a",
         "mOnError": "#faf4ed",
