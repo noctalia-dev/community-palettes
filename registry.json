@@ -1282,6 +1282,46 @@
       }
     },
     {
+      "name": "Garnet",
+      "path": "Garnet",
+      "dark": {
+        "mPrimary": "#990000",
+        "mOnPrimary": "#f5eeee",
+        "mSecondary": "#c8962a",
+        "mOnSecondary": "#1a1414",
+        "mTertiary": "#7a0000",
+        "mOnTertiary": "#f0e8e8",
+        "mError": "#d64545",
+        "mOnError": "#121212",
+        "mSurface": "#121212",
+        "mOnSurface": "#e8e0e0",
+        "mSurfaceVariant": "#181616",
+        "mOnSurfaceVariant": "#c4bcbc",
+        "mOutline": "#2a2424",
+        "mShadow": "#000000",
+        "mHover": "#7a0000",
+        "mOnHover": "#f5eeee"
+      },
+      "light": {
+        "mPrimary": "#990000",
+        "mOnPrimary": "#ffffff",
+        "mSecondary": "#b08040",
+        "mOnSecondary": "#1a1414",
+        "mTertiary": "#7a0000",
+        "mOnTertiary": "#f5efef",
+        "mError": "#c0392b",
+        "mOnError": "#ffffff",
+        "mSurface": "#f7f2f2",
+        "mOnSurface": "#1a1414",
+        "mSurfaceVariant": "#ece6e6",
+        "mOnSurfaceVariant": "#4a4040",
+        "mOutline": "#d8d0d0",
+        "mShadow": "#b0a8a8",
+        "mHover": "#7a0000",
+        "mOnHover": "#ffffff"
+      }
+    },
+    {
       "name": "GitHub Dark",
       "path": "GitHub Dark",
       "dark": {
