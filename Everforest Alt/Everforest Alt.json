@@ -59,8 +59,8 @@
     "mSurfaceVariant": "#f2efdb",
     "mOnSurfaceVariant": "#5c6a72",
     "mOutline": "#a6b0a0",
-    "mShadow": "#5C6A72",
-    "mHover": "#f2efdb",
+    "mShadow": "#5c6a72",
+    "mHover": "#ebe7d3",
     "mOnHover": "#5c6a72",
     "terminal": {
       "background": "#fffbef",
@@ -70,7 +70,7 @@
       "selectionBg": "#e8e5cf",
       "selectionFg": "#5c6a72",
       "normal": {
-        "black": "#fffbef",
+        "black": "#475258",
         "red": "#f85552",
         "green": "#8da101",
         "yellow": "#dfa000",
