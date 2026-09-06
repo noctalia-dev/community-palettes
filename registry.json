@@ -2597,7 +2597,7 @@
         "mOnSurfaceVariant": "#8a56d4",
         "mOutline": "#9b85c2",
         "mShadow": "#e2d8f5",
-        "mHover": "AE6BFF",
+        "mHover": "#AE6BFF",
         "mOnHover": "#ffffff"
       }
     },
@@ -4026,7 +4026,7 @@
         "mPrimary": "#2C363C",
         "mOnPrimary": "#F0EDEC",
         "mSecondary": "#CFC1BA",
-        "mOnSecondary": "##B5A099",
+        "mOnSecondary": "#B5A099",
         "mTertiary": "#8C7F78",
         "mOnTertiary": "#EBE6E5",
         "mError": "#A8334C",
