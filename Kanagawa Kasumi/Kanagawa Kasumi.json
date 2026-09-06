@@ -46,7 +46,7 @@
     }
   },
   "light": {
-    "mPrimary": "#A67A61",
+    "mPrimary": "#936B53",
     "mOnPrimary": "#D9D1BA",
     "mSecondary": "#4F6878",
     "mOnSecondary": "#D9D1BA",
@@ -60,7 +60,7 @@
     "mOnSurfaceVariant": "#1A2026",
     "mOutline": "#9E9783",
     "mShadow": "#1A2026",
-    "mHover": "#A67A61",
+    "mHover": "#936B53",
     "mOnHover": "#D9D1BA",
     "terminal": {
       "normal": {

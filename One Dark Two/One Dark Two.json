@@ -46,11 +46,11 @@
         }
     },
   "light": {
-    "mPrimary": "#5497A2",
-    "mOnPrimary": "#DDDEDF",
-    "mSecondary": "#A48551",
+    "mPrimary": "#99C5CC",
+    "mOnPrimary": "#516944",
+    "mSecondary": "#9A7D4C",
     "mOnSecondary": "#E2E3E4",
-    "mTertiary": "#7C9D68",
+    "mTertiary": "#658255",
     "mOnTertiary": "#DDDEDF",
     "mError": "#B4656E",
     "mOnError": "#DDDEDF",
@@ -60,7 +60,7 @@
     "mOnSurfaceVariant": "#393E47",
     "mOutline": "#C9CCD3",
     "mShadow": "#E6E6E6",
-    "mHover": "#7C9D68",
+    "mHover": "#6C8B5B",
     "mOnHover": "#E6E6E6",
     "terminal": {
       "foreground": "#282C34",

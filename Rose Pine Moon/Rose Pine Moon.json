@@ -4,8 +4,8 @@
     "mOnPrimary": "#232136",
     "mSecondary": "#9ccfd8",
     "mOnSecondary": "#232136",
-    "mTertiary": "#3e8fb0",
-    "mOnTertiary": "#e0def4",
+    "mTertiary": "#32758F",
+    "mOnTertiary": "#D0CDEE",
     "mError": "#eb6f92",
     "mOnError": "#232136",
     "mSurface": "#232136",
@@ -46,7 +46,7 @@
     }
   },
   "light": {
-    "mPrimary": "#d7827e",
+    "mPrimary": "#D1706B",
     "mOnPrimary": "#faf4ed",
     "mSecondary": "#56949f",
     "mOnSecondary": "#faf4ed",
