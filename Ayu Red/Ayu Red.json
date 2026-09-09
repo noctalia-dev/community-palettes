@@ -17,9 +17,9 @@
     "terminal": {
       "normal": {
         "black": "#171B24",
-        "red": "#FACC6E",
-        "green": "#ED8274",
-        "yellow": "#87D96C",
+        "red": "#ED8274",
+        "green": "#87D96C",
+        "yellow": "#FACC6E",
         "blue": "#6DCBFA",
         "magenta": "#DABAFA",
         "cyan": "#90E1C6",
@@ -27,9 +27,9 @@
       },
       "bright": {
         "black": "#686868",
-        "red": "#FFD173",
-        "green": "#F28779",
-        "yellow": "#D5FF80",
+        "red": "#F28779",
+        "green": "#D5FF80",
+        "yellow": "#FFD173",
         "blue": "#73D0FF",
         "magenta": "#DFBFFF",
         "cyan": "#95E6CB",
@@ -63,9 +63,9 @@
     "terminal": {
       "normal": {
         "black": "#000000",
-        "red": "#ECA944",
-        "green": "#EA6C6D",
-        "yellow": "#6CBF43",
+        "red": "#EA6C6D",
+        "green": "#6CBF43",
+        "yellow": "#ECA944",
         "blue": "#3199E1",
         "magenta": "#9E75C7",
         "cyan": "#46BA94",
@@ -73,9 +73,9 @@
       },
       "bright": {
         "black": "#686868",
-        "red": "#F2AE49",
-        "green": "#F07171",
-        "yellow": "#86B300",
+        "red": "#F07171",
+        "green": "#86B300",
+        "yellow": "#F2AE49",
         "blue": "#399EE6",
         "magenta": "#A37ACC",
         "cyan": "#4CBF99",
