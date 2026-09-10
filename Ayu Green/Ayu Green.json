@@ -18,8 +18,8 @@
       "normal": {
         "black": "#171B24",
         "red": "#ED8274",
-        "green": "#FACC6E",
-        "yellow": "#87D96C",
+        "green": "#87D96C",
+        "yellow": "#FACC6E",
         "blue": "#6DCBFA",
         "magenta": "#DABAFA",
         "cyan": "#90E1C6",
@@ -28,8 +28,8 @@
       "bright": {
         "black": "#686868",
         "red": "#F28779",
-        "green": "#FFD173",
-        "yellow": "#D5FF80",
+        "green": "#D5FF80",
+        "yellow": "#FFD173",
         "blue": "#73D0FF",
         "magenta": "#DFBFFF",
         "cyan": "#95E6CB",
@@ -64,8 +64,8 @@
       "normal": {
         "black": "#000000",
         "red": "#EA6C6D",
-        "green": "#ECA944",
-        "yellow": "#6CBF43",
+        "green": "#6CBF43",
+        "yellow": "#ECA944",
         "blue": "#3199E1",
         "magenta": "#9E75C7",
         "cyan": "#46BA94",
@@ -74,8 +74,8 @@
       "bright": {
         "black": "#686868",
         "red": "#F07171",
-        "green": "#F2AE49",
-        "yellow": "#86B300",
+        "green": "#86B300",
+        "yellow": "#F2AE49",
         "blue": "#399EE6",
         "magenta": "#A37ACC",
         "cyan": "#4CBF99",
