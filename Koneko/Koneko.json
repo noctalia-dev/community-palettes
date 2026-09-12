@@ -48,7 +48,7 @@
   "light": {
     "mPrimary": "#cc7e8b",
     "mOnPrimary": "#ffffff",
-    "mSecondary": "#000000",
+    "mSecondary": "#745873",
     "mOnSecondary": "#dac6c8",
     "mTertiary": "#4d758e",
     "mOnTertiary": "#fef5fa",
@@ -75,17 +75,17 @@
         "green": "#417a4f",
         "yellow": "#AE5937",
         "blue": "#466A81",
-        "magenta": "#95475f",
+        "magenta": "#5D465C",
         "cyan": "#537279",
-        "white": "#404040"
+        "white": "#606060"
       },
       "bright": {
-        "black": "#606060",
+        "black": "#404040",
 		"red": "#BF4C6B",
 		"green": "#448052",
 		"yellow": "#B65D39",
 		"blue": "#496F87",
-		"magenta": "#9C4A63",
+		"magenta": "#60485F",
 		"cyan": "#57777F",
         "white": "#ffffff"
       }
