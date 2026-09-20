@@ -2162,6 +2162,46 @@
       }
     },
     {
+      "name": "Inabakumori",
+      "path": "Inabakumori",
+      "dark": {
+        "mPrimary": "#b2b2b2",
+        "mOnPrimary": "#333333",
+        "mSecondary": "#777777",
+        "mOnSecondary": "#dddddd",
+        "mTertiary": "#dddddd",
+        "mOnTertiary": "#333333",
+        "mError": "#ff9999",
+        "mOnError": "#333333",
+        "mSurface": "#333333",
+        "mOnSurface": "#dddddd",
+        "mSurfaceVariant": "#222222",
+        "mOnSurfaceVariant": "#dddddd",
+        "mOutline": "#777777",
+        "mShadow": "#333333",
+        "mHover": "#dddddd",
+        "mOnHover": "#333333"
+      },
+      "light": {
+        "mPrimary": "#333333",
+        "mOnPrimary": "#b2b2b2",
+        "mSecondary": "#b2b2b2",
+        "mOnSecondary": "#222222",
+        "mTertiary": "#777777",
+        "mOnTertiary": "#222222",
+        "mError": "#ff9999",
+        "mOnError": "#333333",
+        "mSurface": "#dddddd",
+        "mOnSurface": "#333333",
+        "mSurfaceVariant": "#b2b2b2",
+        "mOnSurfaceVariant": "#333333",
+        "mOutline": "#222222",
+        "mShadow": "#333333",
+        "mHover": "#222222",
+        "mOnHover": "#dddddd"
+      }
+    },
+    {
       "name": "Jiva",
       "path": "Jiva",
       "dark": {
