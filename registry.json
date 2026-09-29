@@ -42,6 +42,46 @@
       }
     },
     {
+      "name": "Alpenglow",
+      "path": "Alpenglow",
+      "dark": {
+        "mPrimary": "#e8a87c",
+        "mOnPrimary": "#1a1418",
+        "mSecondary": "#8fbf6a",
+        "mOnSecondary": "#1a1418",
+        "mTertiary": "#e8c87a",
+        "mOnTertiary": "#1a1418",
+        "mError": "#d96b6b",
+        "mOnError": "#1a1418",
+        "mSurface": "#1e1a24",
+        "mOnSurface": "#f5ede6",
+        "mSurfaceVariant": "#3a3040",
+        "mOnSurfaceVariant": "#c8b8a8",
+        "mOutline": "#6b5a62",
+        "mShadow": "#100c14",
+        "mHover": "#3a3040",
+        "mOnHover": "#faf4ee"
+      },
+      "light": {
+        "mPrimary": "#c8703a",
+        "mOnPrimary": "#fdf8f2",
+        "mSecondary": "#4a7a2a",
+        "mOnSecondary": "#fdf8f2",
+        "mTertiary": "#a88a3a",
+        "mOnTertiary": "#fdf8f2",
+        "mError": "#b84a4a",
+        "mOnError": "#fdf8f2",
+        "mSurface": "#fdf6ee",
+        "mOnSurface": "#2a2028",
+        "mSurfaceVariant": "#e8d8c8",
+        "mOnSurfaceVariant": "#5a4a52",
+        "mOutline": "#a89890",
+        "mShadow": "#d8c8b8",
+        "mHover": "#f0e4d6",
+        "mOnHover": "#2a2028"
+      }
+    },
+    {
       "name": "Atuel",
       "path": "Atuel",
       "dark": {
