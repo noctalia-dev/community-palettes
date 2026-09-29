@@ -3682,6 +3682,46 @@
       }
     },
     {
+      "name": "SeaBed",
+      "path": "SeaBed",
+      "dark": {
+        "mPrimary": "#87E1DC",
+        "mOnPrimary": "#0A1E24",
+        "mSecondary": "#7FB1D4",
+        "mOnSecondary": "#061726",
+        "mTertiary": "#A2BF8D",
+        "mOnTertiary": "#131A0B",
+        "mError": "#CFA372",
+        "mOnError": "#1C1206",
+        "mSurface": "#0E2231",
+        "mOnSurface": "#E9F0F2",
+        "mSurfaceVariant": "#2D273E",
+        "mOnSurfaceVariant": "#A9A7BC",
+        "mOutline": "#4D4462",
+        "mShadow": "#050D14",
+        "mHover": "#373048",
+        "mOnHover": "#F2F7F9"
+      },
+      "light": {
+        "mPrimary": "#427876",
+        "mOnPrimary": "#F2FAF7",
+        "mSecondary": "#436781",
+        "mOnSecondary": "#F2FAF7",
+        "mTertiary": "#5E734E",
+        "mOnTertiary": "#F2FAF7",
+        "mError": "#8D613B",
+        "mOnError": "#FAF4EA",
+        "mSurface": "#CAE9E5",
+        "mOnSurface": "#2B444A",
+        "mSurfaceVariant": "#DBF1EC",
+        "mOnSurfaceVariant": "#516D73",
+        "mOutline": "#A5CECD",
+        "mShadow": "#B3D5D5",
+        "mHover": "#D2ECE8",
+        "mOnHover": "#284148"
+      }
+    },
+    {
       "name": "Seoul256",
       "path": "Seoul256",
       "dark": {
