@@ -42,6 +42,46 @@
       }
     },
     {
+      "name": "ADW-green",
+      "path": "ADW-green",
+      "dark": {
+        "mPrimary": "#3a944a",
+        "mOnPrimary": "#ffffff",
+        "mSecondary": "#15772e",
+        "mOnSecondary": "#ffffff",
+        "mTertiary": "#ffffff",
+        "mOnTertiary": "#2e3436",
+        "mError": "#c01c28",
+        "mOnError": "#ffffff",
+        "mSurface": "#242424",
+        "mOnSurface": "#ffffff",
+        "mSurfaceVariant": "#1e1e1e",
+        "mOnSurfaceVariant": "#ffffff",
+        "mOutline": "#3d3846",
+        "mShadow": "#000000",
+        "mHover": "#3a944a",
+        "mOnHover": "#ffffff"
+      },
+      "light": {
+        "mPrimary": "#3a944a",
+        "mOnPrimary": "#ffffff",
+        "mSecondary": "#2e3436",
+        "mOnSecondary": "#ffffff",
+        "mTertiary": "#26a269",
+        "mOnTertiary": "#ffffff",
+        "mError": "#e01b24",
+        "mOnError": "#ffffff",
+        "mSurface": "#fafafa",
+        "mOnSurface": "#2e3436",
+        "mSurfaceVariant": "#ffffff",
+        "mOnSurfaceVariant": "#2e3436",
+        "mOutline": "#d6d6d6",
+        "mShadow": "#000000",
+        "mHover": "#3a944a",
+        "mOnHover": "#ffffff"
+      }
+    },
+    {
       "name": "Alpenglow",
       "path": "Alpenglow",
       "dark": {
