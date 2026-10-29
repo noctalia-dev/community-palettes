@@ -43,7 +43,7 @@ warnings=0
 checked=0
 
 for file in "${files[@]}"; do
-  while IFS=$'\t' read -r ratio mode role fg bg; do
+  while IFS=$'\t' read -r ratio mode fg_key bg_key fg bg; do
     [ -z "$ratio" ] && continue
     checked=$((checked + 1))
     shown=$(LC_ALL=C awk -v r="$ratio" 'BEGIN { printf "%5.2f", r }')
@@ -58,8 +58,8 @@ for file in "${files[@]}"; do
       label="ok  "
     fi
     [ -z "$label" ] && continue
-    printf '%s %s:1  %-40s %-5s mOn%s on m%s (%s on %s)\n' \
-      "$label" "$shown" "${file#"$repo_root"/}" "$mode" "$role" "$role" "$fg" "$bg"
+    printf '%s %s:1  %-40s %-5s %s on %s (%s on %s)\n' \
+      "$label" "$shown" "${file#"$repo_root"/}" "$mode" "$fg_key" "$bg_key" "$fg" "$bg"
   done < <(jq -r "$program" "$file")
 done
 

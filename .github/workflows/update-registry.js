@@ -33,21 +33,22 @@ function readThemeJson(dirPath, dirName) {
 function extractColors(variant) {
   if (!variant || typeof variant !== 'object') return {};
 
+  // registry.json is read only by the v4 shell, which knows the version 1 key names.
   const colorKeys = [
-    'mPrimary', 'mOnPrimary',
-    'mSecondary', 'mOnSecondary',
-    'mTertiary', 'mOnTertiary',
-    'mError', 'mOnError',
-    'mSurface', 'mOnSurface',
-    'mSurfaceVariant', 'mOnSurfaceVariant',
-    'mOutline', 'mShadow',
-    'mHover', 'mOnHover'
+    ['mPrimary', 'primary'], ['mOnPrimary', 'on_primary'],
+    ['mSecondary', 'secondary'], ['mOnSecondary', 'on_secondary'],
+    ['mTertiary', 'tertiary'], ['mOnTertiary', 'on_tertiary'],
+    ['mError', 'error'], ['mOnError', 'on_error'],
+    ['mSurface', 'surface'], ['mOnSurface', 'on_surface'],
+    ['mSurfaceVariant', 'surface_container'], ['mOnSurfaceVariant', 'on_surface_variant'],
+    ['mOutline', 'outline_variant'], ['mShadow', 'shadow'],
+    ['mHover', 'hover'], ['mOnHover', 'on_hover']
   ];
 
   const result = {};
-  for (const key of colorKeys) {
-    if (variant[key]) {
-      result[key] = variant[key];
+  for (const [registryKey, paletteKey] of colorKeys) {
+    if (variant[paletteKey]) {
+      result[registryKey] = variant[paletteKey];
     }
   }
   return result;

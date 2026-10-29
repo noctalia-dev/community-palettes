@@ -51,30 +51,31 @@ jobs:
           declare -A table
 
           # Key is the path to the json field, value is the type of field
+          table["version"]="number"
           table["dark"]="object"
-          table["dark.mPrimary"]="string"
-          table["dark.mOnPrimary"]="string"
-          table["dark.mSecondary"]="string"
-          table["dark.mOnSecondary"]="string"
-          table["dark.mTertiary"]="string"
-          table["dark.mOnTertiary"]="string"
-          table["dark.mError"]="string"
-          table["dark.mOnError"]="string"
-          table["dark.mSurface"]="string"
-          table["dark.mOnSurface"]="string"
-          table["dark.mSurfaceVariant"]="string"
-          table["dark.mOnSurfaceVariant"]="string"
-          table["dark.mOutline"]="string"
-          table["dark.mShadow"]="string"
-          table["dark.mHover"]="string"
-          table["dark.mOnHover"]="string"
+          table["dark.primary"]="string"
+          table["dark.on_primary"]="string"
+          table["dark.secondary"]="string"
+          table["dark.on_secondary"]="string"
+          table["dark.tertiary"]="string"
+          table["dark.on_tertiary"]="string"
+          table["dark.error"]="string"
+          table["dark.on_error"]="string"
+          table["dark.surface"]="string"
+          table["dark.on_surface"]="string"
+          table["dark.surface_container"]="string"
+          table["dark.on_surface_variant"]="string"
+          table["dark.outline_variant"]="string"
+          table["dark.shadow"]="string"
+          table["dark.hover"]="string"
+          table["dark.on_hover"]="string"
 
           table["dark.terminal"]="object"
           table["dark.terminal.foreground"]="string"
           table["dark.terminal.background"]="string"
-          table["dark.terminal.selectionFg"]="string"
-          table["dark.terminal.selectionBg"]="string"
-          table["dark.terminal.cursorText"]="string"
+          table["dark.terminal.selection_fg"]="string"
+          table["dark.terminal.selection_bg"]="string"
+          table["dark.terminal.cursor_text"]="string"
           table["dark.terminal.cursor"]="string"
 
           table["dark.terminal.normal"]="object"
@@ -98,29 +99,29 @@ jobs:
           table["dark.terminal.bright.white"]="string"
 
           table["light"]="object"
-          table["light.mPrimary"]="string"
-          table["light.mOnPrimary"]="string"
-          table["light.mSecondary"]="string"
-          table["light.mOnSecondary"]="string"
-          table["light.mTertiary"]="string"
-          table["light.mOnTertiary"]="string"
-          table["light.mError"]="string"
-          table["light.mOnError"]="string"
-          table["light.mSurface"]="string"
-          table["light.mOnSurface"]="string"
-          table["light.mSurfaceVariant"]="string"
-          table["light.mOnSurfaceVariant"]="string"
-          table["light.mOutline"]="string"
-          table["light.mShadow"]="string"
-          table["light.mHover"]="string"
-          table["light.mOnHover"]="string"
+          table["light.primary"]="string"
+          table["light.on_primary"]="string"
+          table["light.secondary"]="string"
+          table["light.on_secondary"]="string"
+          table["light.tertiary"]="string"
+          table["light.on_tertiary"]="string"
+          table["light.error"]="string"
+          table["light.on_error"]="string"
+          table["light.surface"]="string"
+          table["light.on_surface"]="string"
+          table["light.surface_container"]="string"
+          table["light.on_surface_variant"]="string"
+          table["light.outline_variant"]="string"
+          table["light.shadow"]="string"
+          table["light.hover"]="string"
+          table["light.on_hover"]="string"
 
           table["light.terminal"]="object"
           table["light.terminal.foreground"]="string"
           table["light.terminal.background"]="string"
-          table["light.terminal.selectionFg"]="string"
-          table["light.terminal.selectionBg"]="string"
-          table["light.terminal.cursorText"]="string"
+          table["light.terminal.selection_fg"]="string"
+          table["light.terminal.selection_bg"]="string"
+          table["light.terminal.cursor_text"]="string"
           table["light.terminal.cursor"]="string"
 
           table["light.terminal.normal"]="object"
@@ -143,8 +144,25 @@ jobs:
           table["light.terminal.bright.cyan"]="string"
           table["light.terminal.bright.white"]="string"
 
-          # WCAG 2.1 relative-luminance contrast, used to check every mOnX against
-          # the mX it is painted on. Emits one "ratio<TAB>mode<TAB>role<TAB>fg<TAB>bg"
+          # Palette format 2 is the only accepted shape. Each unknown key is
+          # emitted with its format 2 name when it is a format 1 name; the API
+          # converts format 2 files back to format 1 for older Noctalia releases.
+          cat >"$RUNNER_TEMP/unknown.jq" <<'UNKNOWN_JQ'
+          def mode_keys: ["primary","on_primary","secondary","on_secondary","tertiary","on_tertiary","error","on_error","surface","on_surface","surface_container","on_surface_variant","outline_variant","shadow","hover","on_hover","terminal"];
+          def terminal_keys: ["normal","bright","foreground","background","selection_fg","selection_bg","cursor_text","cursor"];
+          def ansi_keys: ["black","red","green","yellow","blue","magenta","cyan","white"];
+          def version1_names: {"mPrimary":"primary","mOnPrimary":"on_primary","mSecondary":"secondary","mOnSecondary":"on_secondary","mTertiary":"tertiary","mOnTertiary":"on_tertiary","mError":"error","mOnError":"on_error","mSurface":"surface","mOnSurface":"on_surface","mSurfaceVariant":"surface_container","mOnSurfaceVariant":"on_surface_variant","mOutline":"outline_variant","mShadow":"shadow","mHover":"hover","mOnHover":"on_hover","selectionFg":"selection_fg","selectionBg":"selection_bg","cursorText":"cursor_text"};
+          def unknown($obj; $allowed; $prefix): if ($obj | type) == "object" then (($obj | keys) - $allowed)[] | "\($prefix)\(.)\t\(version1_names[.] // "")" else empty end;
+          . as $palette
+          | unknown($palette; ["version", "dark", "light"]; ""),
+            ([ "dark", "light" ][] as $mode
+             | unknown($palette[$mode]; mode_keys; "\($mode).")
+             , unknown($palette[$mode].terminal?; terminal_keys; "\($mode).terminal.")
+             , ([ "normal", "bright" ][] as $group | unknown($palette[$mode].terminal?[$group]?; ansi_keys; "\($mode).terminal.\($group).")))
+          UNKNOWN_JQ
+
+          # WCAG 2.1 relative-luminance contrast, used to check every on_x against
+          # the x it is painted on. Emits one "ratio<TAB>mode<TAB>fg key<TAB>bg key<TAB>fg<TAB>bg"
           # line per pair. Pairs whose colors failed the #rrggbb check are skipped;
           # they are already reported above.
           cat >"$RUNNER_TEMP/contrast.jq" <<'CONTRAST_JQ'
@@ -168,12 +186,12 @@ jobs:
 
           . as $palette
           | [ "dark", "light" ][] as $mode
-          | [ "Primary", "Secondary", "Tertiary", "Error", "Surface", "SurfaceVariant", "Hover" ][] as $role
+          | [ ["primary", "on_primary"], ["secondary", "on_secondary"], ["tertiary", "on_tertiary"], ["error", "on_error"], ["surface", "on_surface"], ["surface_container", "on_surface_variant"], ["hover", "on_hover"] ][] as [$bg_key, $fg_key]
           | ($palette[$mode] // {}) as $vars
-          | $vars["m" + $role] as $bg
-          | $vars["mOn" + $role] as $fg
+          | $vars[$bg_key] as $bg
+          | $vars[$fg_key] as $fg
           | select(($bg | is_color) and ($fg | is_color))
-          | "\(contrast($fg; $bg) * 100 | round / 100)\t\($mode)\t\($role)\t\($fg)\t\($bg)"
+          | "\(contrast($fg; $bg) * 100 | round / 100)\t\($mode)\t\($fg_key)\t\($bg_key)\t\($fg)\t\($bg)"
           CONTRAST_JQ
 
           # Below this ratio the text is not legible on its background at any size.
@@ -211,6 +229,27 @@ jobs:
               fi
             done
 
+            # A missing version is already reported by the table check above.
+            version=$(jq -c '.version' "$file")
+            if [ "$version" != "2" ] && [ "$version" != "null" ]; then
+              check_file_title
+
+              comment_body+=$(printf -- '\n- Unsupported `version` `%s`, expected `2`' "$version")
+              issues=$((issues + 1))
+            fi
+
+            while IFS=$'\t' read -r unknown_key format2_name; do
+              [ -z "$unknown_key" ] && continue
+              check_file_title
+
+              if [ -n "$format2_name" ]; then
+                comment_body+=$(printf -- '\n- `%s` is the format 1 name; format 2 calls it `%s`' "$unknown_key" "$format2_name")
+              else
+                comment_body+=$(printf -- '\n- Unknown property `%s`' "$unknown_key")
+              fi
+              issues=$((issues + 1))
+            done < <(jq -r -f "$RUNNER_TEMP/unknown.jq" "$file")
+
             # Every string leaf in a palette is a color, and Noctalia parses colors as
             # exactly six hex digits. Anything else (a name, a short hex, an alpha byte)
             # is dropped at load time and the role silently falls back.
@@ -228,20 +267,20 @@ jobs:
               | "\($p | join(".")) = \($v)"
             ' "$file")
 
-            # Every mOnX is drawn as text and icons on its mX, so the pair has to be
+            # Every on_x is drawn as text and icons on its x, so the pair has to be
             # legible. Accent roles in light variants are the usual offenders.
-            while IFS=$'\t' read -r ratio mode role fg bg; do
+            while IFS=$'\t' read -r ratio mode fg_key bg_key fg bg; do
               [ -z "$ratio" ] && continue
               shown=$(LC_ALL=C awk -v r="$ratio" 'BEGIN { printf "%.2f", r }')
               if awk -v r="$ratio" -v f="$contrast_floor" 'BEGIN { exit !(r < f) }'; then
                 check_file_title
 
-                comment_body+=$(printf -- '\n- Illegible `mOn%s` on `m%s` in `%s`: contrast %s:1 (`%s` on `%s`), below the %s:1 floor' "$role" "$role" "$mode" "$shown" "$fg" "$bg" "$contrast_floor")
+                comment_body+=$(printf -- '\n- Illegible `%s` on `%s` in `%s`: contrast %s:1 (`%s` on `%s`), below the %s:1 floor' "$fg_key" "$bg_key" "$mode" "$shown" "$fg" "$bg" "$contrast_floor")
                 issues=$((issues + 1))
               elif awk -v r="$ratio" -v w="$contrast_warn" 'BEGIN { exit !(r < w) }'; then
                 check_file_title
 
-                comment_body+=$(printf -- '\n- Low contrast `mOn%s` on `m%s` in `%s`: %s:1 (`%s` on `%s`), under %s:1' "$role" "$role" "$mode" "$shown" "$fg" "$bg" "$contrast_warn")
+                comment_body+=$(printf -- '\n- Low contrast `%s` on `%s` in `%s`: %s:1 (`%s` on `%s`), under %s:1' "$fg_key" "$bg_key" "$mode" "$shown" "$fg" "$bg" "$contrast_warn")
                 warnings=$((warnings + 1))
               fi
             done < <(jq -r -f "$RUNNER_TEMP/contrast.jq" "$file")

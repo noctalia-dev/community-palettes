@@ -32,27 +32,29 @@ commit.** A PR that touches it is failed automatically.
 A palette defines a `dark` and a `light` variant. Both are required: users switch between them, and a palette that only
 looks right in one is a palette that breaks for half of them.
 
-Each variant has 16 color roles plus a `terminal` block:
+A palette file starts with `"version": 2`, the palette format it is written in, followed by the two variants. Each
+variant has 16 color roles plus a `terminal` block. Every key is the name of the color role it sets:
 
 ```jsonc
 {
+  "version": 2,
   "dark": {
-    "mPrimary": "#a9b665",          // accent: active elements, highlights
-    "mOnPrimary": "#282828",        // text and icons drawn on top of mPrimary
-    "mSecondary": "#d8a657",
-    "mOnSecondary": "#282828",
-    "mTertiary": "#7db2ba",
-    "mOnTertiary": "#282828",
-    "mError": "#ea6962",
-    "mOnError": "#282828",
-    "mSurface": "#282828",          // the main background
-    "mOnSurface": "#d4be98",        // the main text color
-    "mSurfaceVariant": "#32302f",   // raised or inset surfaces
-    "mOnSurfaceVariant": "#a89984",
-    "mOutline": "#504945",          // borders and dividers
-    "mShadow": "#000000",
-    "mHover": "#a9b665",            // hover state
-    "mOnHover": "#282828",
+    "primary": "#a9b665",            // accent: active elements, highlights
+    "on_primary": "#282828",         // text and icons drawn on top of primary
+    "secondary": "#d8a657",
+    "on_secondary": "#282828",
+    "tertiary": "#7db2ba",
+    "on_tertiary": "#282828",
+    "error": "#ea6962",
+    "on_error": "#282828",
+    "surface": "#282828",            // the main background
+    "on_surface": "#d4be98",         // the main text color
+    "surface_container": "#32302f",  // raised or inset surfaces
+    "on_surface_variant": "#a89984",
+    "outline_variant": "#504945",    // borders and dividers
+    "shadow": "#000000",
+    "hover": "#a9b665",              // hover state
+    "on_hover": "#282828",
 
     "terminal": {
       "normal":  { "black": "#282828", "red": "#ea6962", "green": "#a9b665", "yellow": "#d8a657",
@@ -61,9 +63,9 @@ Each variant has 16 color roles plus a `terminal` block:
                    "blue": "#7db2ba", "magenta": "#d3869b", "cyan": "#89b482", "white": "#dfbf8e" },
       "foreground": "#d4be98",
       "background": "#282828",
-      "selectionFg": "#282828",
-      "selectionBg": "#d4be98",
-      "cursorText": "#282828",
+      "selection_fg": "#282828",
+      "selection_bg": "#d4be98",
+      "cursor_text": "#282828",
       "cursor": "#d4be98"
     }
   },
@@ -72,16 +74,21 @@ Each variant has 16 color roles plus a `terminal` block:
 }
 ```
 
-Copy an existing palette as your starting point; every key above is required in both variants.
+Copy an existing palette as your starting point; every key above is required in both variants, and CI rejects any key
+that is not listed. Format 1 files had no `version` and used `m`-prefixed camelCase names (`mOnPrimary`,
+`mSurfaceVariant` for `surface_container`, `mOutline` for `outline_variant`, terminal `selectionFg`); do not use them.
+Noctalia 5.4.1 and earlier still read only those, and the palette API converts format 2 files back to them for those
+releases automatically.
 
 **Colors are `#rrggbb`, exactly six hex digits.** No named colors, no shorthand, and **no alpha**: Noctalia drops a
 value it cannot parse and the role silently falls back to something else, so `#00000020` does not give you a
 translucent shadow, it gives you a broken one. CI rejects anything that is not six hex digits.
 
-Every `mOnX` has to be legible on its `mX`. That is the whole job of those pairs, and it is what reviewers look at
-first. CI measures each pair as a WCAG contrast ratio: below **2.0:1** the check fails (that text is not readable at
-any size), and **2.0:1 to 3.0:1** is reported as a warning for the reviewer to weigh. Light variants are where this
-bites, because a near-white `mOnPrimary` on a mid-tone accent is usually the pair that goes thin.
+Every `on_x` has to be legible on its `x`, and `on_surface_variant` on `surface_container`. That is the whole job of
+those pairs, and it is what reviewers look at first. CI measures each pair as a WCAG contrast ratio: below **2.0:1**
+the check fails (that text is not readable at any size), and **2.0:1 to 3.0:1** is reported as a warning for the
+reviewer to weigh. Light variants are where this bites, because a near-white `on_primary` on a mid-tone accent is
+usually the pair that goes thin.
 
 The [Theming docs](https://docs.noctalia.dev/v5/theming/) describe what each role drives.
 
@@ -94,8 +101,9 @@ Drop your JSON into the `palettes/` folder of your Noctalia config directory and
 source = "custom"
 ```
 
-That is the same loader the shipped palettes go through, without touching the registry. Switch between dark and light,
-open a few panels, and open a terminal to check the terminal colors.
+That is the same loader the shipped palettes go through, without touching the registry. A format 2 file needs a Noctalia
+release newer than 5.4.1. Switch between dark and light, open a few panels, and open a terminal to check the terminal
+colors.
 
 Run the contrast check the way CI will, before you open the PR (needs `jq`):
 
@@ -105,8 +113,9 @@ Run the contrast check the way CI will, before you open the PR (needs `jq`):
 
 ## Submitting
 
-Open a PR against `main`. CI checks every changed palette on each push: all required roles present, every color a
-valid `#rrggbb`, and every `mOnX` legible on its `mX`. It comments on the PR with anything it finds.
+Open a PR against `main`. CI checks every changed palette on each push: `version` is `2`, all required roles present
+and no unknown keys, every color a valid `#rrggbb`, and every `on_x` legible on its `x`. It comments on the PR with
+anything it finds.
 
 - **One palette per PR.**
 - Pick a name that is not already taken in this repo.
