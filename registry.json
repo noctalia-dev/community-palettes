@@ -1842,6 +1842,46 @@
       }
     },
     {
+      "name": "Fen",
+      "path": "Fen",
+      "dark": {
+        "mPrimary": "#A8C86B",
+        "mOnPrimary": "#101A19",
+        "mSecondary": "#5A8F78",
+        "mOnSecondary": "#071712",
+        "mTertiary": "#D4B071",
+        "mOnTertiary": "#21160A",
+        "mError": "#D36F5A",
+        "mOnError": "#220C09",
+        "mSurface": "#0B1824",
+        "mOnSurface": "#E8E6C8",
+        "mSurfaceVariant": "#12282F",
+        "mOnSurfaceVariant": "#ADB99B",
+        "mOutline": "#3B5E59",
+        "mShadow": "#02080B",
+        "mHover": "#BDD87A",
+        "mOnHover": "#0B1824"
+      },
+      "light": {
+        "mPrimary": "#526E2D",
+        "mOnPrimary": "#FAFDEB",
+        "mSecondary": "#326A59",
+        "mOnSecondary": "#F3FFF9",
+        "mTertiary": "#8A5C2D",
+        "mOnTertiary": "#FFF8EA",
+        "mError": "#A74B40",
+        "mOnError": "#FFF7F2",
+        "mSurface": "#EFF1DE",
+        "mOnSurface": "#102329",
+        "mSurfaceVariant": "#DEE5CE",
+        "mOnSurfaceVariant": "#455D52",
+        "mOutline": "#788C7A",
+        "mShadow": "#C4CEB8",
+        "mHover": "#455F25",
+        "mOnHover": "#FAFDEB"
+      }
+    },
+    {
       "name": "Flexoki",
       "path": "Flexoki",
       "dark": {
