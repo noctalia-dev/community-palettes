@@ -14,20 +14,30 @@ jobs:
   palette-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      # The scripts that run come from the default branch. The pull request is
+      # checked out into pr/ only as data: nothing in pr/ is ever executed.
+      - name: Checkout trusted scripts
         uses: actions/checkout@v6
         with:
+          persist-credentials: false
+
+      - name: Checkout pull request files
+        uses: actions/checkout@v6
+        with:
+          path: pr
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
-          # This job only reads palette JSON; it never executes code from the PR.
+          persist-credentials: false
           allow-unsafe-pr-checkout: true
 
       - name: Validate palette layout
-        run: node .github/workflows/validate-layout.js
+        run: node .github/workflows/validate-layout.js pr
 
       - name: Automatic Palette Check
+        working-directory: pr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           BASE_REF: ${{ github.base_ref }}
           HEAD_REF: ${{ github.head_ref }}

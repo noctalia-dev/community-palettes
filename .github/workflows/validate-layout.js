@@ -42,7 +42,7 @@ function assertValidPaletteLayout(rootDir = ROOT_DIR) {
 
 if (require.main === module) {
   try {
-    assertValidPaletteLayout();
+    assertValidPaletteLayout(process.argv[2] ? path.resolve(process.argv[2]) : ROOT_DIR);
     console.log('Palette layout is valid.');
   } catch (error) {
     console.error(error.message);
