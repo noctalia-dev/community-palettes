@@ -1042,6 +1042,46 @@
       }
     },
     {
+      "name": "Catppuccin Mocha Deep Blue",
+      "path": "Catppuccin Mocha Deep Blue",
+      "dark": {
+        "mPrimary": "#89b4fa",
+        "mOnPrimary": "#1e1e2e",
+        "mSecondary": "#89b4fa",
+        "mOnSecondary": "#1e1e2e",
+        "mTertiary": "#89b4fa",
+        "mOnTertiary": "#1e1e2e",
+        "mError": "#f38ba8",
+        "mOnError": "#1e1e2e",
+        "mSurface": "#1e1e2e",
+        "mOnSurface": "#cdd6f4",
+        "mSurfaceVariant": "#313244",
+        "mOnSurfaceVariant": "#a6adc8",
+        "mOutline": "#6c7086",
+        "mShadow": "#11111b",
+        "mHover": "#89b4fa",
+        "mOnHover": "#1e1e2e"
+      },
+      "light": {
+        "mPrimary": "#1e66f5",
+        "mOnPrimary": "#eff1f5",
+        "mSecondary": "#1e66f5",
+        "mOnSecondary": "#eff1f5",
+        "mTertiary": "#1e66f5",
+        "mOnTertiary": "#eff1f5",
+        "mError": "#d20f39",
+        "mOnError": "#eff1f5",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#ccd0da",
+        "mOnSurfaceVariant": "#6c6f85",
+        "mOutline": "#9ca0b0",
+        "mShadow": "#dce0e8",
+        "mHover": "#1e66f5",
+        "mOnHover": "#eff1f5"
+      }
+    },
+    {
       "name": "Catppuccin Mocha Green",
       "path": "Catppuccin Mocha Green",
       "dark": {
