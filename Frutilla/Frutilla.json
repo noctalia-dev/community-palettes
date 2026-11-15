@@ -65,24 +65,24 @@
     "on_hover": "#644642",
     "terminal": {
       "normal": {
-        "black": "#b5afaf",
+        "black": "#070404",
         "red": "#703f3b",
         "green": "#783532",
         "yellow": "#803131",
         "blue": "#793431",
         "magenta": "#684839",
         "cyan": "#6f3f3a",
-        "white": "#070404"
+        "white": "#b5afaf"
       },
       "bright": {
-        "black": "#908c8c",
+        "black": "#644642",
         "red": "#8c4b46",
         "green": "#963c39",
         "yellow": "#9e3637",
         "blue": "#963c38",
         "magenta": "#835a46",
         "cyan": "#8c4b44",
-        "white": "#040202"
+        "white": "#fff7f7"
       },
       "foreground": "#644642",
       "background": "#fff7f7",
@@ -93,3 +93,4 @@
     }
   }
 }
+
