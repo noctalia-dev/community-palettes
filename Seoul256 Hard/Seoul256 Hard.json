@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Seoul256",
   "dark": {
     "primary": "#d5a55f",
     "on_primary": "#262626",

@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Rose Pine",
   "dark": {
     "primary": "#c4a7e7",
     "on_primary": "#232136",

@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Kanagawa",
   "dark": {
     "primary": "#D9A78B",
     "on_primary": "#1A2026",

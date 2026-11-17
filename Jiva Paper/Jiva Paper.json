@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Jiva",
   "dark": {
     "primary": "#bfc0de",
     "on_primary": "#262626",

@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Everforest",
   "dark": {
     "primary": "#A7C080",
     "on_primary": "#232A2E",

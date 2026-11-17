@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Ayu",
   "dark": {
     "primary": "#D95757",
     "on_primary": "#0B0E14",

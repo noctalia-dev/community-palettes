@@ -38,6 +38,7 @@ variant has 16 color roles plus a `terminal` block. Every key is the name of the
 ```jsonc
 {
   "version": 2,
+  "base": "Gruvbox",   // optional: family name, groups variants in the picker
   "dark": {
     "primary": "#a9b665",            // accent: active elements, highlights
     "on_primary": "#282828",         // text and icons drawn on top of primary
@@ -73,6 +74,10 @@ variant has 16 color roles plus a `terminal` block. Every key is the name of the
   "light": { }                      // the same shape again
 }
 ```
+
+A palette that is one variant of a larger family can name that family in an optional top-level `"base"`, next to
+`version`: `"base": "Catppuccin"`. Noctalia groups palettes that share a `base` under one collapsible entry in the
+palette picker. Use the exact spelling other palettes of the family already use; leave it out for a standalone palette.
 
 Copy an existing palette as your starting point; every key above is required in both variants, and CI rejects any key
 that is not listed. Format 1 files had no `version` and used `m`-prefixed camelCase names (`mOnPrimary`,
@@ -113,9 +118,9 @@ Run the contrast check the way CI will, before you open the PR (needs `jq`):
 
 ## Submitting
 
-Open a PR against `main`. CI checks every changed palette on each push: `version` is `2`, all required roles present
-and no unknown keys, every color a valid `#rrggbb`, and every `on_x` legible on its `x`. It comments on the PR with
-anything it finds.
+Open a PR against `main`. CI checks every changed palette on each push: `version` is `2`, `base`, when present, is a
+non-empty string, all required roles present and no unknown keys, every color a valid `#rrggbb`, and every `on_x`
+legible on its `x`. It comments on the PR with anything it finds.
 
 - **One palette per PR.**
 - Pick a name that is not already taken in this repo.

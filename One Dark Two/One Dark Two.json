@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "One Dark",
   "dark": {
     "primary": "#62BAC6",
     "on_primary": "#21252B",

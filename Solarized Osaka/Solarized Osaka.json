@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Solarized",
   "dark": {
     "primary": "#29a298",
     "on_primary": "#ffffff",

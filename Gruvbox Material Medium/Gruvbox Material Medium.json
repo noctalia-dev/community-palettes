@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Gruvbox",
   "dark": {
     "primary": "#a9b665",
     "on_primary": "#282828",

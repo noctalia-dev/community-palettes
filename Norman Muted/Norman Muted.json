@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Norman",
   "dark": {
     "primary": "#4DB391",
     "on_primary": "#262626",

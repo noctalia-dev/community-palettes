@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Catppuccin",
   "dark": {
     "primary": "#ef9f76",
     "on_primary": "#303446",

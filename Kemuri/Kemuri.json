@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Kemuri",
   "dark": {
     "primary": "#cb9168",
     "on_primary": "#242120",

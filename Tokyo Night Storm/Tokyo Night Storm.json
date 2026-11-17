@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Tokyo Night",
   "dark": {
     "primary": "#7aa2f7",
     "on_primary": "#1a1b26",
