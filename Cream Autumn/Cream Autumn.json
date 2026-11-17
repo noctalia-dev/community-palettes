@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Cream",
   "dark": {
     "primary": "#e5c799",
     "on_primary": "#161311",
