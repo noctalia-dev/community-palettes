@@ -1962,6 +1962,46 @@
       }
     },
     {
+      "name": "Frutilla",
+      "path": "Frutilla",
+      "dark": {
+        "mPrimary": "#a53f40",
+        "mOnPrimary": "#070404",
+        "mSecondary": "#9c433f",
+        "mOnSecondary": "#070404",
+        "mTertiary": "#9b4441",
+        "mOnTertiary": "#070404",
+        "mError": "#90514c",
+        "mOnError": "#070404",
+        "mSurface": "#190e0e",
+        "mOnSurface": "#c29d98",
+        "mSurfaceVariant": "#211313",
+        "mOnSurfaceVariant": "#c29d98",
+        "mOutline": "#522d2d",
+        "mShadow": "#040202",
+        "mHover": "#321c1c",
+        "mOnHover": "#c29d98"
+      },
+      "light": {
+        "mPrimary": "#943839",
+        "mOnPrimary": "#fff7f7",
+        "mSecondary": "#843835",
+        "mOnSecondary": "#fff7f7",
+        "mTertiary": "#833937",
+        "mOnTertiary": "#fff7f7",
+        "mError": "#76423e",
+        "mOnError": "#fff7f7",
+        "mSurface": "#fff7f7",
+        "mOnSurface": "#644642",
+        "mSurfaceVariant": "#f5eded",
+        "mOnSurfaceVariant": "#644642",
+        "mOutline": "#b5afaf",
+        "mShadow": "#7e7a7a",
+        "mHover": "#e6dede",
+        "mOnHover": "#644642"
+      }
+    },
+    {
       "name": "Garnet",
       "path": "Garnet",
       "dark": {
