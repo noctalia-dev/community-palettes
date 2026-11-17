@@ -164,7 +164,7 @@ jobs:
           def version1_names: {"mPrimary":"primary","mOnPrimary":"on_primary","mSecondary":"secondary","mOnSecondary":"on_secondary","mTertiary":"tertiary","mOnTertiary":"on_tertiary","mError":"error","mOnError":"on_error","mSurface":"surface","mOnSurface":"on_surface","mSurfaceVariant":"surface_container","mOnSurfaceVariant":"on_surface_variant","mOutline":"outline_variant","mShadow":"shadow","mHover":"hover","mOnHover":"on_hover","selectionFg":"selection_fg","selectionBg":"selection_bg","cursorText":"cursor_text"};
           def unknown($obj; $allowed; $prefix): if ($obj | type) == "object" then (($obj | keys) - $allowed)[] | "\($prefix)\(.)\t\(version1_names[.] // "")" else empty end;
           . as $palette
-          | unknown($palette; ["version", "dark", "light"]; ""),
+          | unknown($palette; ["version", "base", "dark", "light"]; ""),
             ([ "dark", "light" ][] as $mode
              | unknown($palette[$mode]; mode_keys; "\($mode).")
              , unknown($palette[$mode].terminal?; terminal_keys; "\($mode).terminal.")
@@ -248,6 +248,14 @@ jobs:
               issues=$((issues + 1))
             fi
 
+            base_issue=$(jq -r 'if has("base") then (.base | if type != "string" then "must be a string" elif test("^\\S(.*\\S)?$") | not then "must be non-empty without leading or trailing whitespace" else empty end) else empty end' "$file")
+            if [ -n "$base_issue" ]; then
+              check_file_title
+
+              comment_body+=$(printf -- '\n- `base` %s' "$base_issue")
+              issues=$((issues + 1))
+            fi
+
             while IFS=$'\t' read -r unknown_key format2_name; do
               [ -z "$unknown_key" ] && continue
               check_file_title
@@ -260,7 +268,7 @@ jobs:
               issues=$((issues + 1))
             done < <(jq -r -f "$RUNNER_TEMP/unknown.jq" "$file")
 
-            # Every string leaf in a palette is a color, and Noctalia parses colors as
+            # Every string leaf in a variant is a color, and Noctalia parses colors as
             # exactly six hex digits. Anything else (a name, a short hex, an alpha byte)
             # is dropped at load time and the role silently falls back.
             while IFS= read -r bad_color; do
@@ -271,6 +279,7 @@ jobs:
               issues=$((issues + 1))
             done < <(jq -r '
               paths(scalars) as $p
+              | select($p[0] == "dark" or $p[0] == "light")
               | getpath($p) as $v
               | select(($v | type) == "string")
               | select($v | test("^#[0-9a-fA-F]{6}$") | not)
