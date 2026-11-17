@@ -1402,6 +1402,46 @@
       }
     },
     {
+      "name": "Chocolatada",
+      "path": "Chocolatada",
+      "dark": {
+        "mPrimary": "#9c6c4f",
+        "mOnPrimary": "#040201",
+        "mSecondary": "#777970",
+        "mOnSecondary": "#040201",
+        "mTertiary": "#83736c",
+        "mOnTertiary": "#040201",
+        "mError": "#9c6c4f",
+        "mOnError": "#040201",
+        "mSurface": "#160a06",
+        "mOnSurface": "#a79687",
+        "mSurfaceVariant": "#1e0e08",
+        "mOnSurfaceVariant": "#a79687",
+        "mOutline": "#4f2515",
+        "mShadow": "#020100",
+        "mHover": "#2f160d",
+        "mOnHover": "#a79687"
+      },
+      "light": {
+        "mPrimary": "#8c6147",
+        "mOnPrimary": "#fff7f4",
+        "mSecondary": "#65665f",
+        "mOnSecondary": "#fff7f4",
+        "mTertiary": "#6f615b",
+        "mOnTertiary": "#fff7f4",
+        "mError": "#7f5840",
+        "mOnError": "#fff7f4",
+        "mSurface": "#fff7f4",
+        "mOnSurface": "#75675b",
+        "mSurfaceVariant": "#fbf3f0",
+        "mOnSurfaceVariant": "#75675b",
+        "mOutline": "#bbb5b3",
+        "mShadow": "#827e7d",
+        "mHover": "#ece4e1",
+        "mOnHover": "#75675b"
+      }
+    },
+    {
       "name": "Coral and Sea",
       "path": "Coral and Sea",
       "dark": {
