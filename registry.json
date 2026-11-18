@@ -1362,6 +1362,46 @@
       }
     },
     {
+      "name": "Cattppuccin Abyssal",
+      "path": "Cattppuccin Abyssal",
+      "dark": {
+        "mPrimary": "#89b4fa",
+        "mOnPrimary": "#1e1e2e",
+        "mSecondary": "#89b4fa",
+        "mOnSecondary": "#1e1e2e",
+        "mTertiary": "#89b4fa",
+        "mOnTertiary": "#1e1e2e",
+        "mError": "#f38ba8",
+        "mOnError": "#1e1e2e",
+        "mSurface": "#1e1e2e",
+        "mOnSurface": "#cdd6f4",
+        "mSurfaceVariant": "#181825",
+        "mOnSurfaceVariant": "#bac2de",
+        "mOutline": "#45475a",
+        "mShadow": "#11111b",
+        "mHover": "#89b4fa",
+        "mOnHover": "#1e1e2e"
+      },
+      "light": {
+        "mPrimary": "#89b4fa",
+        "mOnPrimary": "#1e1e2e",
+        "mSecondary": "#89b4fa",
+        "mOnSecondary": "#1e1e2e",
+        "mTertiary": "#89b4fa",
+        "mOnTertiary": "#1e1e2e",
+        "mError": "#f38ba8",
+        "mOnError": "#1e1e2e",
+        "mSurface": "#eff1f5",
+        "mOnSurface": "#4c4f69",
+        "mSurfaceVariant": "#e6e9ef",
+        "mOnSurfaceVariant": "#5c5f77",
+        "mOutline": "#bcc0cc",
+        "mShadow": "#4c4f69",
+        "mHover": "#89b4fa",
+        "mOnHover": "#1e1e2e"
+      }
+    },
+    {
       "name": "Cherry Blossom",
       "path": "Cherry Blossom",
       "dark": {
