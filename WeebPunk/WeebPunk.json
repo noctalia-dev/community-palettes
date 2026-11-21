@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "base": "CyberPunk",
+  "base": "Cyberpunk",
   "dark": {
     "primary": "#d93657",
     "on_primary": "#000000",
