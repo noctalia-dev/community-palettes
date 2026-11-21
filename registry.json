@@ -4642,6 +4642,46 @@
       }
     },
     {
+      "name": "WeebPunk",
+      "path": "WeebPunk",
+      "dark": {
+        "mPrimary": "#d93657",
+        "mOnPrimary": "#000000",
+        "mSecondary": "#89ffff",
+        "mOnSecondary": "#000000",
+        "mTertiary": "#89ffff",
+        "mOnTertiary": "#000000",
+        "mError": "#d93657",
+        "mOnError": "#000000",
+        "mSurface": "#000000",
+        "mOnSurface": "#89ffff",
+        "mSurfaceVariant": "#160206",
+        "mOnSurfaceVariant": "#89ffff",
+        "mOutline": "#d93657",
+        "mShadow": "#000000",
+        "mHover": "#d93657",
+        "mOnHover": "#000000"
+      },
+      "light": {
+        "mPrimary": "#d93657",
+        "mOnPrimary": "#000000",
+        "mSecondary": "#160206",
+        "mOnSecondary": "#89ffff",
+        "mTertiary": "#160206",
+        "mOnTertiary": "#89ffff",
+        "mError": "#d93657",
+        "mOnError": "#000000",
+        "mSurface": "#89ffff",
+        "mOnSurface": "#000000",
+        "mSurfaceVariant": "#89ffff",
+        "mOnSurfaceVariant": "#160206",
+        "mOutline": "#d93657",
+        "mShadow": "#000000",
+        "mHover": "#d93657",
+        "mOnHover": "#000000"
+      }
+    },
+    {
       "name": "Zenbones",
       "path": "Zenbones",
       "dark": {
