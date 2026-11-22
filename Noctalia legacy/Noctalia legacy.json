@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "base": "Noctalia",
   "dark": {
     "primary": "#c7a1d8",
     "on_primary": "#1a151f",
