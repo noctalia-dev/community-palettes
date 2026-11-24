@@ -322,6 +322,46 @@
       }
     },
     {
+      "name": "Birds of Paradise",
+      "path": "Birds of Paradise",
+      "dark": {
+        "mPrimary": "#d0d150",
+        "mOnPrimary": "#2a1f1d",
+        "mSecondary": "#e99d2a",
+        "mOnSecondary": "#2a1f1d",
+        "mTertiary": "#6ba18a",
+        "mOnTertiary": "#2a1f1d",
+        "mError": "#e84627",
+        "mOnError": "#2a1f1d",
+        "mSurface": "#2a1f1d",
+        "mOnSurface": "#fff9d5",
+        "mSurfaceVariant": "#573d26",
+        "mOnSurfaceVariant": "#e0dbb7",
+        "mOutline": "#9b6c4a",
+        "mShadow": "#2a1f1d",
+        "mHover": "#6ba18a",
+        "mOnHover": "#2a1f1d"
+      },
+      "light": {
+        "mPrimary": "#427b58",
+        "mOnPrimary": "#fff9d5",
+        "mSecondary": "#b57614",
+        "mOnSecondary": "#fff9d5",
+        "mTertiary": "#976678",
+        "mOnTertiary": "#fff9d5",
+        "mError": "#cc4232",
+        "mOnError": "#fff9d5",
+        "mSurface": "#fff9d5",
+        "mOnSurface": "#2a1f1d",
+        "mSurfaceVariant": "#ebdbb2",
+        "mOnSurfaceVariant": "#9b6c4a",
+        "mOutline": "#bdae93",
+        "mShadow": "#e0dbb7",
+        "mHover": "#976678",
+        "mOnHover": "#fff9d5"
+      }
+    },
+    {
       "name": "Breeze",
       "path": "Breeze",
       "dark": {
